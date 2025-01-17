@@ -16,9 +16,11 @@ call plug#begin('~/.vim/plugged')
 Plug 'elvessousa/sobrio'
 
 Plug 'rebelot/kanagawa.nvim'
-" Set default colorscheme
-colorscheme sobrio
 
+Plug 'craftzdog/solarized-osaka.nvim'
+
+" Set default colorscheme
+colorscheme solarized-osaka
 " highlight Comment ctermfg=Red guifg=#6a737d
 
 " Enable true color support
@@ -71,7 +73,8 @@ let g:coc_global_extensions = [
 " Automatically start NERDTree when Vim starts
 autocmd VimEnter * NERDTree
 " Set colorscheme after NERDTree opens
-autocmd VimEnter * if !exists('g:colors_name') | colorscheme sobrio | endif
+autocmd VimEnter * if !exists('g:colors_name') | colorscheme solarized-osaka
+ | endif
 
 " Disable conflicting keybindings
 let g:coc_disable_command = 1
